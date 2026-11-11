@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frangel Florendo | IT Lead and Automation Specialist</title>
+    <meta name="description" content="Frangel Florendo helps businesses automate lead capture, follow-up, and client management with GoHighLevel funnels, CRM systems, and integrations.">
+    <meta name="theme-color" content="#0A0E14">
+
+    <meta property="og:title" content="Frangel Florendo | IT Lead and Automation Specialist">
+    <meta property="og:description" content="Building smarter systems. Automating better workflows. Driving technology forward.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="asset/image/favicon.jfif" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
+    <script src="asset/js/script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============ Navigation ============ -->
+    <header class="site-header">
+        <div class="progress" aria-hidden="true"><span></span></div>
+        <div class="container header-inner">
+            <a href="#home" class="logo" aria-label="Frangel Florendo, back to top">
+                <span class="logo-mark" aria-hidden="true">FF</span>
+                <span class="logo-name">Frangel Florendo</span>
+            </a>
+
+            <nav aria-label="Main">
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="nav-cta">Let's connect</a></li>
+                </ul>
+            </nav>
+
+            <button class="burger" type="button" aria-controls="nav-list" aria-expanded="false" aria-label="Open menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ============ Hero ============ -->
+        <section class="hero" id="home">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="hero-name">Frangel Florendo</p>
+                    <p class="hero-roles">
+                        <span>IT Lead</span><span>Automation Specialist</span><span>Systems &amp; Technology</span>
+                    </p>
+                    <h1 class="hero-title">
+                        <span class="line"><span>Building Smarter Systems.</span></span>
+                        <span class="line"><span>Automating Better Workflows.</span></span>
+                        <span class="line"><span>Driving Technology Forward.</span></span>
+                    </h1>
+                    <p class="hero-intro">I help businesses stop doing by hand what a system can do for them. I build and manage GoHighLevel funnels, automations, CRMs, and integrations, so your team spends less time on busywork and more time with customers.</p>
+                    <div class="hero-actions">
+                        <a href="#services" class="btn btn-primary">See How I Can Help</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    </div>
+                </div>
+
+                <!-- Animated workflow, modeled on a GoHighLevel workflow canvas -->
+                <figure class="flow" aria-label="Example lead intake workflow: a form submission creates a contact, checks if the lead is qualified, then books an appointment or starts a nurture sequence.">
+                    <div class="flow-bar">
+                        <span class="flow-title">Lead intake workflow</span>
+                        <span class="flow-status"><i></i>Active</span>
+                    </div>
+                    <svg class="flow-svg" viewBox="0 0 520 500" aria-hidden="true">
+                        <defs>
+                            <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+                                <feGaussianBlur stdDeviation="3" result="b" />
+                                <feMerge><feMergeNode in="b" /><feMergeNode in="SourceGraphic" /></feMerge>
+                            </filter>
+                        </defs>
+
+                        <!-- connectors -->
+                        <g class="wires">
+                            <path id="p1" d="M260 76 V120" />
+                            <path id="p2" d="M260 176 V220" />
+                            <path id="p3" d="M260 276 V295 Q260 303 252 303 H148 Q140 303 140 311 V330" />
+                            <path id="p4" d="M260 276 V295 Q260 303 268 303 H372 Q380 303 380 311 V330" />
+                            <path id="p5" d="M140 386 V430" />
+                            <path id="p6" d="M380 386 V430" />
+                        </g>
+                        <text class="branch" x="196" y="296">yes</text>
+                        <text class="branch" x="304" y="296">no</text>
+
+                        <!-- nodes -->
+                        <g class="node" style="--t:0s;--dur:6s">
+                            <rect x="160" y="20" width="200" height="56" rx="8" />
+                            <text class="n-kind" x="176" y="42">trigger</text>
+                            <text class="n-label" x="176" y="62">Form submitted</text>
+                        </g>
+                        <g class="node" style="--t:1.1s;--dur:6s">
+                            <rect x="160" y="120" width="200" height="56" rx="8" />
+                            <text class="n-kind" x="176" y="142">action</text>
+                            <text class="n-label" x="176" y="162">Create contact + tag</text>
+                        </g>
+                        <g class="node" style="--t:2.3s;--dur:6s">
+                            <rect x="170" y="220" width="180" height="56" rx="8" />
+                            <text class="n-kind" x="186" y="242">if / else</text>
+                            <text class="n-label" x="186" y="262">Lead qualified?</text>
+                        </g>
+                        <g class="node" style="--t:3.6s;--dur:12s">
+                            <rect x="40" y="330" width="200" height="56" rx="8" />
+                            <text class="n-kind" x="56" y="352">action</text>
+                            <text class="n-label" x="56" y="372">Book appointment</text>
+                        </g>
+                        <g class="node" style="--t:9.6s;--dur:12s">
+                            <rect x="280" y="330" width="200" height="56" rx="8" />
+                            <text class="n-kind" x="296" y="352">action</text>
+                            <text class="n-label" x="296" y="372">Start nurture sequence</text>
+                        </g>
+                        <g class="node" style="--t:4.8s;--dur:12s">
+                            <rect x="40" y="430" width="200" height="56" rx="8" />
+                            <text class="n-kind" x="56" y="452">pipeline</text>
+                            <text class="n-label" x="56" y="472">Stage: Booked</text>
+                        </g>
+                        <g class="node" style="--t:10.8s;--dur:12s">
+                            <rect x="280" y="430" width="200" height="56" rx="8" />
+                            <text class="n-kind" x="296" y="452">wait</text>
+                            <text class="n-label" x="296" y="472">Re-engage in 30 days</text>
+                        </g>
+
+                        <!-- data pulses: first half takes the "yes" branch, second half the "no" branch (12s loop) -->
+                        <g class="pulses" filter="url(#glow)">
+                            <circle r="4"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.025;0.092;1"><mpath href="#p1" /></animateMotion><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.025;0.03;0.087;0.092;1" /></circle>
+                            <circle r="4"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.125;0.192;1"><mpath href="#p2" /></animateMotion><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.125;0.13;0.187;0.192;1" /></circle>
+                            <circle r="4"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.225;0.3;1"><mpath href="#p3" /></animateMotion><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.225;0.23;0.295;0.3;1" /></circle>
+                            <circle r="4"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.333;0.4;1"><mpath href="#p5" /></animateMotion><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.333;0.338;0.395;0.4;1" /></circle>
+                            <circle r="4"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.525;0.592;1"><mpath href="#p1" /></animateMotion><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.525;0.53;0.587;0.592;1" /></circle>
+                            <circle r="4"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.625;0.692;1"><mpath href="#p2" /></animateMotion><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.625;0.63;0.687;0.692;1" /></circle>
+                            <circle r="4"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.725;0.8;1"><mpath href="#p4" /></animateMotion><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.725;0.73;0.795;0.8;1" /></circle>
+                            <circle r="4"><animateMotion dur="12s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.833;0.9;1"><mpath href="#p6" /></animateMotion><animate attributeName="opacity" dur="12s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.833;0.838;0.895;0.9;1" /></circle>
+                        </g>
+                    </svg>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ============ Services ============ -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 class="section-title">How I can help your business</h2>
+                    <p>If your team is chasing leads by hand, juggling disconnected tools, or losing track of clients, this is the work I do.</p>
+                </div>
+
+                <ul class="service-grid">
+                    <li class="service reveal">
+                        <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2" /><path d="M3.5 10h17M8 3v4M16 3v4M8 14.5l2.5 2.5L16 12" /></svg>
+                        <h3>Turn more leads into booked appointments</h3>
+                        <p>Funnels and booking flows that capture a lead and get them on your calendar without back-and-forth.</p>
+                        <ul>
+                            <li>Appointment, webinar, podcast, and book funnels</li>
+                            <li>Calendar booking with confirmations and reminders</li>
+                            <li>No-show and missed-call follow-up</li>
+                        </ul>
+                    </li>
+                    <li class="service reveal">
+                        <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v4.5h-4.5" /><path d="M12 8v4l2.5 2" /></svg>
+                        <h3>Follow up automatically</h3>
+                        <p>Every lead and past customer gets the right message at the right time, even when your team is busy.</p>
+                        <ul>
+                            <li>Email and SMS nurture sequences</li>
+                            <li>Reactivation campaigns for old leads and clients</li>
+                            <li>Review requests and customer satisfaction (CSAT) surveys</li>
+                        </ul>
+                    </li>
+                    <li class="service reveal">
+                        <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="5" height="16" rx="1.2" /><rect x="9.5" y="4" width="5" height="11" rx="1.2" /><rect x="16" y="4" width="5" height="7" rx="1.2" /></svg>
+                        <h3>Get your CRM organized</h3>
+                        <p>A clean pipeline where you can see every lead, every client, and where your revenue comes from.</p>
+                        <ul>
+                            <li>Pipelines and CRM processes built for your industry</li>
+                            <li>Client onboarding flows</li>
+                            <li>Lead source tracking and ROI reporting</li>
+                        </ul>
+                    </li>
+                    <li class="service reveal">
+                        <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="2.5" /><circle cx="18" cy="6" r="2.5" /><circle cx="18" cy="18" r="2.5" /><path d="M8.3 10.8l7.4-3.6M8.3 13.2l7.4 3.6" /></svg>
+                        <h3>Connect the tools you already use</h3>
+                        <p>Data moves between your apps on its own, so nobody copies and pastes between systems.</p>
+                        <ul>
+                            <li>Zapier, Pabbly, webhook, and API integrations</li>
+                            <li>AI chat and voice agents that answer and qualify leads</li>
+                            <li>SMS setup, including A2P 10DLC registration</li>
+                        </ul>
+                    </li>
+                    <li class="service reveal">
+                        <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="1.5" /><rect x="14" y="13" width="7" height="7" rx="1.5" /><path d="M10 7.5h3.5a3 3 0 0 1 3 3V13M14.5 11l2 2 2-2" /></svg>
+                        <h3>Move everything to GoHighLevel</h3>
+                        <p>One platform instead of five, with your contacts, pipelines, and automations carried over.</p>
+                        <ul>
+                            <li>Migrations from Actionstep, Keap, and WordPress</li>
+                            <li>Website builds inside GoHighLevel</li>
+                            <li>Rebuilding old automations so they work properly</li>
+                        </ul>
+                    </li>
+                    <li class="service reveal">
+                        <svg class="service-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v5.5c0 4.5-3.2 8.2-7.5 9.5-4.3-1.3-7.5-5-7.5-9.5V6z" /><path d="M8.8 12l2.2 2.2 4.2-4.4" /></svg>
+                        <h3>Keep your systems running</h3>
+                        <p>Ongoing support so the systems you paid for keep working as your business changes.</p>
+                        <ul>
+                            <li>Troubleshooting broken workflows</li>
+                            <li>Testing and QA before anything goes live</li>
+                            <li>Documentation your team can follow</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="industries reveal">
+                    <h3>Businesses I've built systems for</h3>
+                    <!-- PLACEHOLDER: check "Automotive" (you wrote Motors) and "Lead prospecting" (you wrote Prospecting) -->
+                    <ul class="industry-list">
+                        <li><span>Law firms</span></li>
+                        <li><span>Med spas</span></li>
+                        <li><span>Healthcare</span></li>
+                        <li><span>Orthodontics</span></li>
+                        <li><span>HVAC</span></li>
+                        <li><span>Home builders</span></li>
+                        <li><span>Landscaping</span></li>
+                        <li><span>Tree services</span></li>
+                        <li><span>Event venues</span></li>
+                        <li><span>Automotive</span></li>
+                        <li><span>Coaching</span></li>
+                        <li><span>Yoga studios</span></li>
+                        <li><span>Digital marketing agencies</span></li>
+                        <li><span>Lead prospecting</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Process ============ -->
+        <section class="section process" id="process">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 class="section-title">How we'd work together</h2>
+                    <p>A clear path from your first message to a system that runs.</p>
+                </div>
+                <ol class="steps">
+                    <li class="reveal">
+                        <span class="step-num">01</span>
+                        <h3>Talk it through</h3>
+                        <p>You tell me how leads and clients move through your business today, and where things get stuck.</p>
+                    </li>
+                    <li class="reveal">
+                        <span class="step-num">02</span>
+                        <h3>Map the system</h3>
+                        <p>I plan the funnels, workflows, and integrations, and confirm the scope with you before building.</p>
+                    </li>
+                    <li class="reveal">
+                        <span class="step-num">03</span>
+                        <h3>Build and test</h3>
+                        <p>I build it in your account and test every path, so nothing breaks in front of a customer.</p>
+                    </li>
+                    <li class="reveal">
+                        <span class="step-num">04</span>
+                        <h3>Launch and support</h3>
+                        <p>We go live together, you get documentation, and I stay available for fixes and improvements.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ Projects ============ -->
+        <section class="section projects" id="projects">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 class="section-title">Selected projects</h2>
+                    <p>Examples of systems I've built for clients. Client names are kept private.</p>
+                </div>
+
+                <!--
+                    PROJECT PLACEHOLDERS
+                    1. Save screenshots as asset/image/project-1.png to project-6.png (wide, around 1600 x 900).
+                       They appear automatically. Until then, a "Preview coming soon" panel shows.
+                    2. Review each description, role, and stack. Replace anything that doesn't match the real build.
+                -->
+
+                <div class="featured">
+                    <article class="project project-lg reveal">
+                        <div class="frame">
+                            <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                            <div class="frame-screen">
+                                <img src="asset/image/project-1.png" alt="CRM automation system preview" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+                                <span class="frame-empty">Preview coming soon</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-kind">CRM automation</p>
+                            <h3>Lead-to-client automation system</h3>
+                            <p>A GoHighLevel system that takes a lead from first contact to booked client: intake, tagging, assignment, follow-up, and pipeline updates without manual steps.</p>
+                            <dl class="project-meta">
+                                <div><dt>My role</dt><dd>Designed the workflow architecture, built the automations, and ran QA before launch.</dd></div>
+                                <div><dt>Stack</dt><dd>GoHighLevel workflows, custom fields, webhooks, Twilio</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="project project-lg reveal">
+                        <div class="frame">
+                            <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                            <div class="frame-screen">
+                                <img src="asset/image/project-2.png" alt="CRM migration preview" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+                                <span class="frame-empty">Preview coming soon</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-kind">CRM migration and optimization</p>
+                            <h3>Platform migration to GoHighLevel</h3>
+                            <p>Moving a business's contacts, pipelines, and automations from its old platform into GoHighLevel, then cleaning up the workflows that carried over.</p>
+                            <dl class="project-meta">
+                                <div><dt>My role</dt><dd>Mapped the data, rebuilt the automations, and verified the migration.</dd></div>
+                                <div><dt>Stack</dt><dd>GoHighLevel, Actionstep, Keap, WordPress</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project reveal">
+                        <div class="frame">
+                            <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                            <div class="frame-screen">
+                                <img src="asset/image/project-3.png" alt="Funnel development preview" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+                                <span class="frame-empty">Preview coming soon</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-kind">Funnel development</p>
+                            <h3>GoHighLevel funnel build</h3>
+                            <p>Multi-page funnel styled with custom code and connected to forms, tagging, and follow-up.</p>
+                            <dl class="project-meta">
+                                <div><dt>My role</dt><dd>Built and styled the pages, mapped the forms.</dd></div>
+                                <div><dt>Stack</dt><dd>GoHighLevel funnels, HTML, CSS, JavaScript</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="frame">
+                            <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                            <div class="frame-screen">
+                                <img src="asset/image/project-4.png" alt="Appointment booking automation preview" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+                                <span class="frame-empty">Preview coming soon</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-kind">Appointment booking</p>
+                            <h3>Booking and reminder automation</h3>
+                            <p>Calendars, confirmations, reminders, and no-show follow-up wired to the pipeline.</p>
+                            <dl class="project-meta">
+                                <div><dt>My role</dt><dd>Configured calendars and built the reminder workflows.</dd></div>
+                                <div><dt>Stack</dt><dd>GoHighLevel calendars and workflows, SMS, email</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="frame">
+                            <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                            <div class="frame-screen">
+                                <img src="asset/image/project-5.png" alt="Workflow integration preview" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+                                <span class="frame-empty">Preview coming soon</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-kind">Workflow integrations</p>
+                            <h3>App-to-app integration</h3>
+                            <p>Connecting GoHighLevel with the tools a team already uses so data moves without copy and paste.</p>
+                            <dl class="project-meta">
+                                <div><dt>My role</dt><dd>Planned the data flow and built the connections.</dd></div>
+                                <div><dt>Stack</dt><dd>Zapier, Pabbly Connect, webhooks, APIs</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="frame">
+                            <div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+                            <div class="frame-screen">
+                                <img src="asset/image/project-6.png" alt="Lead reporting dashboard preview" loading="lazy" onerror="this.parentElement.classList.add('is-empty');this.remove()">
+                                <span class="frame-empty">Preview coming soon</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-kind">Lead management and reporting</p>
+                            <h3>Lead attribution and reporting</h3>
+                            <p>Capturing where each lead came from and reporting it inside the CRM, from channel down to campaign.</p>
+                            <dl class="project-meta">
+                                <div><dt>My role</dt><dd>Set up the tracking, fields, and reporting views.</dd></div>
+                                <div><dt>Stack</dt><dd>GoHighLevel, Google Tag Manager, UTM tracking</dd></div>
+                            </dl>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="early reveal">
+                    <h3>Early front-end work</h3>
+                    <ul>
+                        <li>
+                            <span class="early-name">FGEL landing page</span>
+                            <span class="early-note">Web developer course, LCT Philippines</span>
+                            <a href="https://frangelflorendo.github.io/FGEL/" target="_blank" rel="noopener" class="link">View site</a>
+                        </li>
+                        <li>
+                            <span class="early-name">QR code component</span>
+                            <span class="early-note">Frontend Mentor challenge</span>
+                            <a href="https://frangelflorendo.github.io/QR-code-challenge/" target="_blank" rel="noopener" class="link">View site</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Technical expertise ============ -->
+        <section class="section expertise" id="expertise">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 class="section-title">Technical expertise</h2>
+                    <p>The skills I use to plan, build, connect, and maintain client systems.</p>
+                </div>
+
+                <div class="skill-panel reveal">
+                    <div class="skill-col">
+                        <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="7" height="6" rx="1.5" /><rect x="14" y="14" width="7" height="6" rx="1.5" /><path d="M6.5 10v3.5a2 2 0 0 0 2 2H14" /></svg>
+                        <h3>CRM &amp; Automation</h3>
+                        <ul>
+                            <li>GoHighLevel</li>
+                            <li>Workflow automation</li>
+                            <li>CRM architecture</li>
+                            <li>Lead management systems</li>
+                            <li>Funnel development</li>
+                        </ul>
+                    </div>
+                    <div class="skill-col">
+                        <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14" /></svg>
+                        <h3>Integrations &amp; Development</h3>
+                        <ul>
+                            <li>API integrations</li>
+                            <li>Webhooks</li>
+                            <li>Zapier</li>
+                            <li>Pabbly Connect</li>
+                            <li>HTML, CSS, JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-col">
+                        <svg class="skill-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><path d="M3.5 19a5.5 5.5 0 0 1 11 0M16 5.5a3 3 0 0 1 0 5.5M18 14.5a5 5 0 0 1 2.5 4.5" /></svg>
+                        <h3>IT Operations &amp; Leadership</h3>
+                        <ul>
+                            <li>Technical team management</li>
+                            <li>Quality assurance</li>
+                            <li>Workflow documentation</li>
+                            <li>Troubleshooting</li>
+                            <li>Technical project coordination</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="toolkit reveal">
+                    <h3>Also in my toolkit</h3>
+                    <ul class="chips">
+                        <li>Claude Code</li>
+                        <li>Codex</li>
+                        <li>Conversational AI</li>
+                        <li>Voice AI</li>
+                        <li>Twilio</li>
+                        <li>A2P 10DLC registration</li>
+                        <li>Actionstep</li>
+                        <li>WordPress</li>
+                        <li>ClickUp</li>
+                        <li>monday.com</li>
+                        <li>Airtable</li>
+                        <li>Google Sheets</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+
+                <div class="certs reveal">
+                    <h3>Certifications</h3>
+                    <!--
+                        PLACEHOLDER: replace with your real certifications.
+                        Optional square badge image: asset/image/cert-1.png, cert-2.png, cert-3.png.
+                        Paste each credential URL into href="#". Copy a whole <li class="cert"> block to add more.
+                    -->
+                    <ul class="cert-list">
+                        <li class="cert">
+                            <div class="cert-badge">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5.5" /><path d="M8.5 13.5L7 21l5-2.5 5 2.5-1.5-7.5" /></svg>
+                                <img src="asset/image/cert-1.png" alt="" onerror="this.remove()">
+                            </div>
+                            <div>
+                                <h4>Certification name</h4>
+                                <p>Issuer, year</p>
+                                <a href="#" class="link" target="_blank" rel="noopener">View credential</a>
+                            </div>
+                        </li>
+                        <li class="cert">
+                            <div class="cert-badge">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5.5" /><path d="M8.5 13.5L7 21l5-2.5 5 2.5-1.5-7.5" /></svg>
+                                <img src="asset/image/cert-2.png" alt="" onerror="this.remove()">
+                            </div>
+                            <div>
+                                <h4>Certification name</h4>
+                                <p>Issuer, year</p>
+                                <a href="#" class="link" target="_blank" rel="noopener">View credential</a>
+                            </div>
+                        </li>
+                        <li class="cert">
+                            <div class="cert-badge">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5.5" /><path d="M8.5 13.5L7 21l5-2.5 5 2.5-1.5-7.5" /></svg>
+                                <img src="asset/image/cert-3.png" alt="" onerror="this.remove()">
+                            </div>
+                            <div>
+                                <h4>Certification name</h4>
+                                <p>Issuer, year</p>
+                                <a href="#" class="link" target="_blank" rel="noopener">View credential</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ About ============ -->
+        <section class="section about" id="about">
+            <div class="container about-grid">
+                <div class="about-head reveal">
+                    <h2 class="section-title">About</h2>
+                    <div class="avatar">
+                        <span aria-hidden="true">FF</span>
+                        <!-- Optional: asset/image/profile.png. A professional headshot works best. Initials show if the file is missing. -->
+                        <img src="asset/image/profile.png" alt="Portrait of Frangel Florendo" width="120" height="120" onerror="this.remove()">
+                    </div>
+                </div>
+
+                <div class="about-body reveal">
+                    <p class="lead">I'm an IT Lead and automation specialist. I help business owners replace manual, scattered work with systems that capture leads, follow up, and keep clients organized on their own.</p>
+                    <p>I still do the hands-on work. I build GoHighLevel systems myself, and I lead a team of automation specialists whose work I review and test before it reaches a client. That means you get the speed of someone who builds every day and the quality checks of someone who manages builds for a living.</p>
+                    <p>My background is in information technology and front-end development, so I care about how a system is documented and how it looks, not only whether it runs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Contact ============ -->
+        <section class="section contact" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-intro reveal">
+                    <h2 class="section-title">Let's connect</h2>
+                    <p>Tell me what's slowing your business down, and I'll reply by email with how I can help. Open to project work, ongoing support, and full-time roles.</p>
+
+                    <ul class="contact-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3.5 6.5l8.5 6.5 8.5-6.5" /></svg>
+                            <a href="mailto:frangelflorendo9@gmail.com">frangelflorendo9@gmail.com</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" /></svg>
+                            <a href="tel:+639319267140">+63 931 926 7140</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
+                            <span>Binangonan, Rizal, Philippines</span>
+                        </li>
+                    </ul>
+
+                    <ul class="socials" aria-label="Social profiles">
+                        <li><a href="https://github.com/frangelflorendo" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="solid"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56l-.02-1.96c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14l-.01 3.18c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z" /></svg>
+                        </a></li>
+                        <li><a href="https://web.facebook.com/frangel.florendo" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="solid"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.4V14h2.7v8z" /></svg>
+                        </a></li>
+                        <li><a href="https://www.instagram.com/fraaangel_/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.3" cy="6.7" r=".6" class="dot" /></svg>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <form class="contact-form reveal" action="https://formspree.io/f/mpznaoej" method="POST" novalidate>
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <!-- Stops spam bots. Leave it hidden and empty. -->
+                    <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <button type="submit" class="btn btn-primary btn-block"><span class="btn-label">Send message</span></button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year">2026</span> Frangel Florendo</p>
+            <a href="#home" class="link">Back to top</a>
+        </div>
+    </footer>
+
+    <a href="#home" class="to-top" aria-label="Back to top">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle class="ring-track" cx="24" cy="24" r="21" />
+            <circle class="ring-fill" cx="24" cy="24" r="21" />
+            <path class="arrow" d="M24 31V17M18 23l6-6 6 6" />
+        </svg>
+    </a>
+</body>
+
+</html>
